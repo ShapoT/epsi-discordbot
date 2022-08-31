@@ -42,9 +42,5 @@ module.exports = {
     client.channels.cache
       .get("1004088197178986506")
       .send({ embeds: [adminEmbed] })
-
-    const adminMessage = await message.reply({ embeds: [adminEmbed] });
-      adminMessage.react("✅");
-      adminMessage.react("❌");
   },
 };
