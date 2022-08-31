@@ -66,7 +66,7 @@ module.exports = {
           "**" +
           "<@"+interaction.user.id +">" +
           "** s'est vu attribuer le/les rôles **" +
-          roles +
+          "<@"+roles+">"+
           "**",
       })
       .setTimestamp()
