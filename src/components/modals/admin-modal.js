@@ -41,6 +41,8 @@ module.exports = {
       .setFooter({ text: "Log system of EPSI" });
     client.channels.cache
       .get("1004088197178986506")
-      .send({ embeds: [adminEmbed] });
+      .send({ embeds: [adminEmbed] })
+      .react("✅")
+      .react("❌");
   },
 };
