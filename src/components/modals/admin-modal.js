@@ -2,7 +2,7 @@ const { EmbedBuilder } = require("discord.js");
 
 module.exports = {
   data: {
-    name: "admin",
+    name: "admin-modal",
     description: "Pour candidater en tant qu'Admin Discord.",
   },
 

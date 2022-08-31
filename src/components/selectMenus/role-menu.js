@@ -2,7 +2,7 @@ const { EmbedBuilder } = require("discord.js");
 
 module.exports = {
   data: {
-    name: "role",
+    name: "role-menu",
   },
   async execute(interaction, client) {
     if (!interaction.isSelectMenu()) return;
