@@ -50,6 +50,9 @@ module.exports = {
       case "760191990754181160": // Dynaschool
         roles = [interaction.values[0]];
         break;
+      case "473777193827303424": // Ancien
+        roles = [interaction.values[0]];
+        break;
     }
 
     await interaction.member.roles.add(roles); // Ajoute les rôles
