@@ -57,6 +57,7 @@ module.exports = {
 
     if (interaction.member.roles.cache.has(roles[0])) {
       interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà ce rôle !").setColor("RED").build()] });
+      return;
     } else {
 
     await interaction.member.roles.add(roles); // Ajoute les rôles
