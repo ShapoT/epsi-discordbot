@@ -61,8 +61,6 @@ module.exports = {
       content: "Vos rôles ont été ajoutés !",
       ephemeral: true,
     });
-    
-    await interaction.deleteReply(role-menu);
 
     const roleEmbed = new EmbedBuilder()
       .setColor(0x3498db)
