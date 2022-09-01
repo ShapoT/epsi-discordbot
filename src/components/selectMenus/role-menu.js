@@ -7,6 +7,8 @@ module.exports = {
   async execute(interaction, client) {
     if (!interaction.isSelectMenu()) return;
 
+    await interaction.deleteReply();
+    
     let roles = []; // Array of roles
 
     switch (interaction.values[0]) {
@@ -60,6 +62,7 @@ module.exports = {
       content: "Vos rôles ont été ajoutés !",
       ephemeral: true,
     });
+    await interaction.deleteReply();
 
     const roleEmbed = new EmbedBuilder()
       .setColor(0x3498db)

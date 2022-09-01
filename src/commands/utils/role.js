@@ -94,7 +94,5 @@ module.exports = {
     await interaction.reply({
       components: [new ActionRowBuilder().addComponents(menu)],
     });
-    
-    await interaction.deleteReply();
   },
 };
