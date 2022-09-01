@@ -56,7 +56,7 @@ module.exports = {
     }
 
     if (interaction.member.roles.cache.has(roles)) {
-      interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà un rôle !").setColor("RED").build()] });
+      interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà un rôle !").setColor("0xff0000").build()] });
       return;
     } else {
 
