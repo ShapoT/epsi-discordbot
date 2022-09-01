@@ -96,6 +96,6 @@ module.exports = {
       ephemeral: true,
     });
 
-    let timeout = setTimeout(SelectMenuBuilder.components[0], 10000); 
+    let timeout = setTimeout(menu.components[0], 10000); 
   },
 };
