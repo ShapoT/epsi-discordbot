@@ -7,8 +7,7 @@ module.exports = {
   async execute(interaction, client) {
     if (!interaction.isSelectMenu()) return;
 
-    await interaction.deleteReply();
-    
+
     let roles = []; // Array of roles
 
     switch (interaction.values[0]) {
