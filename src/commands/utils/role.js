@@ -15,6 +15,8 @@ module.exports = {
     const menu = new SelectMenuBuilder()
       .setCustomId("role-menu")
       .setPlaceholder("Choisissez votre rôle")
+      .setMinValue(1)
+      .setMaxValue(1)
       .setOptions(
         new SelectMenuOptionBuilder({
           label: "B1 Classe 1",
