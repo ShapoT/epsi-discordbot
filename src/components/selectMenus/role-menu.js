@@ -55,16 +55,15 @@ module.exports = {
         break;
     }
 
-    if (interaction.member.roles.cache.has(roles)) {
-      interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà un rôle !").setColor("0xff0000").build()] });
-      return;
+    if (interaction.member.roles.cache.includes(roles[0])) {
+      interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà ce rôle !").setColor("0xff0000").build()] });
     } else {
 
     await interaction.member.roles.add(roles); // Ajoute les rôles
     await interaction.reply({
       content: "Vos rôles ont été ajoutés !",
       ephemeral: true,
-    }); }
+    });}
 
     const roleEmbed = new EmbedBuilder()
       .setColor(0x3498db)
