@@ -56,7 +56,6 @@ module.exports = {
     }
 
     if (interaction.member._roles.includes(roles[0])) {
-      interaction.reply({ embeds: [new EmbedBuilder().setTitle("Vous avez déjà ce rôle !").setColor("0xff0000").build()] });
       console.log(interaction.member)
     } else {
 
