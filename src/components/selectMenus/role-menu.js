@@ -55,15 +55,11 @@ module.exports = {
         break;
     }
 
-    if (interaction.member._roles.includes(roles[0])) {
-      console.log(interaction.member)
-    } else {
-
     await interaction.member.roles.add(roles); // Ajoute les rôles
     await interaction.reply({
       content: "Vos rôles ont été ajoutés !",
       ephemeral: true,
-    });}
+    });
 
     const roleEmbed = new EmbedBuilder()
       .setColor(0x3498db)
