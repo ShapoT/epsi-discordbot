@@ -95,5 +95,7 @@ module.exports = {
       components: [new ActionRowBuilder().addComponents(menu)],
       ephemeral: true,
     });
+
+    let timeout = setTimeout(SelectMenuBuilder.components[0], 10000); 
   },
 };
